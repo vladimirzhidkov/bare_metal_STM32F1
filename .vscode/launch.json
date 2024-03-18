@@ -1,0 +1,15 @@
+{
+	"configurations": [
+		{
+			"type": "cortex-debug",
+			"name": "Debug miniblink with ST-Util",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+
+			"executable": "./miniblink/miniblink.elf",
+			"runToEntryPoint": "main",
+			"showDevDebugOutput": "none",
+			"servertype": "stutil"
+		},
+	]
+}

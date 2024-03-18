@@ -1,0 +1,17 @@
+{
+	"configurations": [
+		{
+			"name": "Mac",
+			"includePath": [
+				"${workspaceFolder}/**"
+			],
+			"defines": [
+				"STM32F1"
+			],
+			"cStandard": "c99",
+			"intelliSenseMode": "gcc-arm",
+			"compilerPath": "/Applications/ARM/bin/arm-none-eabi-gcc"
+		}
+	],
+	"version": 4
+}
