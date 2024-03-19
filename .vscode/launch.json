@@ -11,5 +11,16 @@
 			"showDevDebugOutput": "none",
 			"servertype": "stutil"
 		},
+		{
+			"type": "cortex-debug",
+			"name": "Debug 02_test with ST-Util",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+
+			"executable": "./02_test/a.elf",
+			"runToEntryPoint": "main",
+			"showDevDebugOutput": "none",
+			"servertype": "stutil"
+		},
 	]
 }

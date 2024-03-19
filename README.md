@@ -1,11 +1,9 @@
 # Bare metal C programming for STM32F1x
 
-git submodule add https://github.com/libopencm3/libopencm3.git
+Install ARM GNU Toolchain from https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads
 
-make -C libopencm3
+Install gdb server: brew install stlink
 
-brew install stlink
+Pull and build libopencm3: git submodule update --init && make -C libopencm3
 
-install Cortex-Debug extension for vscode
-
-install ARM GNU Toolchain https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads
+Install Cortex-Debug extension for vscode
