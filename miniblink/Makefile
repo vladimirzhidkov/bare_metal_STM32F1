@@ -1,21 +1,7 @@
-PROJECT = miniblink
-BUILD_DIR = bin
-SOURCE_DIR = src
-OPENOCD_CONGIF_DIR = ../openocd-config
-OPENCM3_DIR=../libopencm3
-
-#SHARED_DIR = ../my-common-code
-CFILES := $(addprefix $(SOURCE_DIR)/, main.c)
-#CFILES += api.c
-#AFILES += api-asm.S
-
-# TODO - you will need to edit these two lines!
 DEVICE=stm32f103c8t6
-# OOCD_FILE = $(OPENOCD_CONGIF_DIR)/stm32f1x.cfg
-
-start: all
-flash: $(PROJECT).bin
-	st-flash write $< 0x8000000
+PROJECT = miniblink
+OPENCM3_DIR=../libopencm3
+CFILES := $(addprefix src/, main.c)
 
 # You shouldn't have to edit anything below here.
 VPATH += $(SHARED_DIR)

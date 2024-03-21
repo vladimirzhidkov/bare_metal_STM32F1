@@ -20,11 +20,17 @@
 #include <libopencm3/stm32/rcc.h>
 #include <libopencm3/stm32/gpio.h>
 
-static void
-gpio_setup(void) {
+
+static void rcc_setup(void) {
+	// rcc_clock_setup_pll(&rcc_hsi_configs[RCC_CLOCK_HSI_24MHZ]);
+	// rcc_clock_setup_pll(&rcc_hsi_configs[RCC_CLOCK_HSI_48MHZ]);
+	// rcc_clock_setup_pll(&rcc_hsi_configs[RCC_CLOCK_HSI_64MHZ]);
 
 	/* Enable GPIOC clock. */
 	rcc_periph_clock_enable(RCC_GPIOC);
+}
+
+static void gpio_setup(void) {
 
 	/* Set GPIO8 (in GPIO port C) to 'output push-pull'. */
 	gpio_set_mode(GPIOC,GPIO_MODE_OUTPUT_2_MHZ,
@@ -35,7 +41,7 @@ int
 main(void)
 {
 	int i;
-
+	rcc_setup();
 	gpio_setup();
 
 	for (;;) {

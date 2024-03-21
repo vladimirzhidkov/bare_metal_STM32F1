@@ -1,17 +1,6 @@
 {
-	"files.associations": {
-		"rcc.h": "c",
-		"gpio.h": "c",
-		"common.h": "c",
-		"memorymap.h": "c",
-		"string.h": "c",
-		"task.h": "c",
-		"freertos.h": "c",
-		"nvic.h": "c",
-		"portmacro.h": "c",
-		"vector.h": "c",
-		"freertosconfig.h": "c",
-		"portable.h": "c"
-	},
 	"editor.tabSize": 6,
+	"files.associations": {
+		"rcc.h": "c"
+	},
 }

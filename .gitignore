@@ -1,5 +1,7 @@
 bin/
+.vscode/settings.json
 *.elf
 *.bin
 *.d
+*.map
 generated.*.ld
